@@ -14,10 +14,10 @@ Why? Because, why not? I'm having fun :).
 int main(){
   double row_vector1[3] = {0.3, 0.6, 0.1};
   double row_vector2[3] = {0.8, 0.7, 0.5};
-  printf("\n");
 
   print_row_vector(row_vector1, sizeof(row_vector1));
   print_row_vector(row_vector2, sizeof(row_vector2));
+  printf("\n");
 
   double d = dot_product((double*)row_vector1, (double*)row_vector2, sizeof(row_vector1));
   printf("%lf\n", d);
