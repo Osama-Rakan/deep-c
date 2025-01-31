@@ -1,6 +1,16 @@
+#include <stdio.h>
 #include "deep_c.h"
 
 int main(){
+  double row_vector1[3] = {0.3, 0.6, 0.1};
+  double row_vector2[3] = {0.8, 0.7, 0.5};
+  print_row_vector(row_vector1, sizeof(row_vector1));
+  print_row_vector(row_vector2, sizeof(row_vector2));
+  printf("\n");
+
+  double d = dot_product((double*)row_vector1, (double*)row_vector2, sizeof(row_vector1));
+  printf("%lf\n", d);
+
   double mat1[2][3]={{0.7778, 5, 4},
                     {0.8, 0.5555, 0.99999}};
 
@@ -27,6 +37,12 @@ int main(){
 
   matrix_multiplication((double*)mat1, mat1_total_size, mat1_row_size, (double*)mat2,  mat2_total_size, mat2_row_size, (double*)results);
   print_matrix((double*)results, sizeof(results), sizeof(results[0]));
+
+  int y = 2;
+  int z = 9;
+  printf("Before swapping: x=%d, y=%d\n", y, z);
+  swap_int_variables(&y, &z);
+  printf("After swapping: x=%d, y=%d\n", y, z);
 
   return 0;
 }

@@ -1,5 +1,22 @@
 #include <stdio.h>
 
+void linear_algebra_print_row_vector(double* vec, size_t total_size){
+  int cols = total_size / sizeof(double);
+  for(int j=0;j<cols;j++){
+    printf("%lf\t", vec[j]);
+  }
+  printf("\n");
+}
+
+double linear_algebra_dot_product(double* vec1, double* vec2, size_t total_size){
+  int cols = total_size / sizeof(double); // two row vectors of the same size, and the number of rows is always 1
+  double sum = 0;
+  for(int j=0;j<cols;j++){
+    sum += vec1[j] * vec2[j];
+  }
+  return sum;
+}
+
 void linear_algebra_print_matrix(double* mat, size_t total_size, size_t row_size){
   int rows = total_size / row_size;
   int cols = row_size / sizeof(double);
@@ -27,4 +44,3 @@ void linear_algebra_matrix_multiplication(double* mat1, size_t total_size1, size
     }
   }
 }
-
