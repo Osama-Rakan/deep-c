@@ -38,6 +38,15 @@ int main(){
   matrix_multiplication((double*)mat1, mat1_total_size, mat1_row_size, (double*)mat2,  mat2_total_size, mat2_row_size, (double*)results);
   print_matrix((double*)results, sizeof(results), sizeof(results[0]));
 
+
+  double mat3[2][3]={{0.6787, 1, 8},
+                    {0.123, 0.34556, 0.12355}};
+
+  double results2[2][3];
+
+  element_wise_product((double*)mat1, (double*)mat3, (double*)results2, sizeof(mat1), sizeof(mat1[0]));
+  print_matrix((double*)results2, sizeof(results2), sizeof(results2[0]));
+
   int y = 2;
   int z = 9;
   printf("Before swapping: x=%d, y=%d\n", y, z);
