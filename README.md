@@ -89,6 +89,6 @@ int main(){
 
 ## How to run
 ```
-gcc -o app main.c deep_c.c linear_algebra.c utils.c
+gcc -o app main.c src/deep_c.c src/linear_algebra.c src/utils.c -Iinclude
 ./app
 ```
