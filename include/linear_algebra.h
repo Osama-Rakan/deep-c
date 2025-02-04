@@ -5,3 +5,4 @@ void linear_algebra_print_matrix(double* mat, size_t total_size, size_t row_size
 void linear_algebra_matrix_multiplication(double* mat1, size_t total_size1, size_t row_size1, double* mat2, size_t total_size2, size_t row_size2, double* results);
 void linear_algebra_element_wise_product(double* mat1, double* mat2, double* results, size_t total_size, size_t row_size);
 void linear_algebra_matrix_transpose(double* mat, size_t total_size, size_t row_size, double* results);
+void linear_algebra_matrix_flatten(double* mat, size_t total_size, size_t row_size, double* results);

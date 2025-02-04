@@ -11,6 +11,7 @@ Why? Because, why not? I'm having fun :).
 * 2D matrix multiplication (AB)
 * Element-wise product (A∘B)
 * Matrix transpose (Aᵀ)
+* Flatten a matrix
 ```C
 #include <stdio.h>
 #include "deep_c.h"
@@ -65,6 +66,11 @@ int main(){
   print_matrix((double*)mat1, sizeof(mat1), sizeof(mat1[0]));
   matrix_transpose((double*)mat1, sizeof(mat1), sizeof(mat1[0]), (double*)matrix_transpose_results);
   print_matrix((double*)matrix_transpose_results, sizeof(matrix_transpose_results), sizeof(matrix_transpose_results[0]));
+
+  double matrix_flatten_results[rows1*cols1];
+  print_matrix((double*)mat1, sizeof(mat1), sizeof(mat1[0]));
+  matrix_flatten((double*)mat1, sizeof(mat1), sizeof(mat1[0]), (double*)matrix_flatten_results);
+  print_row_vector((double*)matrix_flatten_results, sizeof(matrix_flatten_results));
 
   return 0;
 }

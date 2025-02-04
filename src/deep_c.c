@@ -14,3 +14,5 @@ void swap_int_variables(int* a, int* b) { utils_swap_int_variables(a, b); }
 void element_wise_product(double* mat1, double* mat2, double* results, size_t total_size, size_t row_size) { linear_algebra_element_wise_product(mat1, mat2, results, total_size, row_size); };
 
 void matrix_transpose(double* mat, size_t total_size, size_t row_size, double* results) { linear_algebra_matrix_transpose(mat, total_size, row_size, results); }
+
+void matrix_flatten(double* mat, size_t total_size, size_t row_size, double* results) { linear_algebra_matrix_flatten(mat, total_size, row_size, results); }

@@ -70,3 +70,14 @@ void linear_algebra_matrix_transpose(double* mat, size_t total_size, size_t row_
     }
   }
 }
+
+void linear_algebra_matrix_flatten(double* mat, size_t total_size, size_t row_size, double* results){
+  const size_t rows = total_size / row_size;
+  const size_t cols = row_size / sizeof(double);
+
+  for(size_t current_row=0;current_row<rows;current_row++){
+    for(size_t current_col=0;current_col<cols;current_col++){
+      results[current_row * cols + current_col] = mat[current_row * cols + current_col];
+    }
+  }
+}

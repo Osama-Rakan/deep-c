@@ -52,6 +52,11 @@ int main(){
   matrix_transpose((double*)mat1, sizeof(mat1), sizeof(mat1[0]), (double*)matrix_transpose_results);
   print_matrix((double*)matrix_transpose_results, sizeof(matrix_transpose_results), sizeof(matrix_transpose_results[0]));
 
+  double matrix_flatten_results[rows1*cols1];
+  print_matrix((double*)mat1, sizeof(mat1), sizeof(mat1[0]));
+  matrix_flatten((double*)mat1, sizeof(mat1), sizeof(mat1[0]), (double*)matrix_flatten_results);
+  print_row_vector((double*)matrix_flatten_results, sizeof(matrix_flatten_results));
+
   int y = 2;
   int z = 9;
   printf("Before swapping: x=%d, y=%d\n", y, z);

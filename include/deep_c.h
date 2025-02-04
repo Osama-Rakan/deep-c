@@ -6,3 +6,4 @@ void matrix_multiplication(double* mat1, size_t total_size1, size_t row_size1, d
 void swap_int_variables(int* a, int* b);
 void element_wise_product(double* mat1, double* mat2, double* results, size_t total_size, size_t row_size);
 void matrix_transpose(double* mat, size_t total_size, size_t row_size, double* results);
+void matrix_flatten(double* mat, size_t total_size, size_t row_size, double* results);
