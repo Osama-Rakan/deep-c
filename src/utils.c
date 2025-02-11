@@ -1,3 +1,4 @@
+#include "utils.h"
 #include <stdio.h>
 
 void utils_swap_int_variables(int* a, int* b){  

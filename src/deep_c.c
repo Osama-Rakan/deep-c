@@ -1,3 +1,4 @@
+#include "deep_c.h"
 #include "linear_algebra.h"
 #include "utils.h"
 

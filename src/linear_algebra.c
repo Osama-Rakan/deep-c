@@ -1,3 +1,4 @@
+#include "linear_algebra.h"
 #include <stdio.h>
 
 void linear_algebra_print_row_vector(double* vec, size_t total_size){
