@@ -4,7 +4,7 @@ Deep C is a personal project I'm working on to implement mathematical, machine l
 
 Why? Because, why not? I'm having fun :).
 
-### Note: I'm implementing these algorithms entirely on my own in my free time without using any LLMs, so this project will take a lot of time.
+**Note:** I'm implementing these algorithms entirely on my own in my free time without using any LLMs, so this project will take a lot of time. I like recreational programming after all.
 
 ## Linear Algebra
 * Dot product between two row vectors (a⋅u)
